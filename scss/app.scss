@@ -1,0 +1,70 @@
+//Helpers
+@import "helpers/grid";
+@import "helpers/normalize";
+
+body {
+  font-family: "SF UI Display";
+  font-weight: normal;
+  font-size: 100%;
+
+  background-color: lighten(#ffffff, .5);
+  overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,li, a { margin-top: 0; }
+
+.sidebar {
+  width: calc(100vw - 920px);
+  height: 100vh;
+  //background-color: rgba(244,244,244,.9);
+  float: left;
+  padding: 60px;
+}
+
+.dribbble-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(920px);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.dribbble-list {
+  width: 920px;
+  height: 100vh;
+  float: right;
+  overflow: scroll;
+  padding: 60px;
+  background-color: rgba(0,0,0,.05);
+  -webkit-backdrop-filter: blur(100px);
+
+  img {
+    box-shadow: 0 30px 60px rgba(0,0,0,.15);
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.display {
+  color: #0F8DF0;
+}
+
+.lead {
+  color: #e3e3e3;
+  font-size: 1.2rem;
+}
+
+p {
+  a {
+    color: #0F8DF0;
+    float: left;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+}
