@@ -1,2 +1,6 @@
-//Ignore CodeKit config file
+# Ignore docs files
+scss/.sass-cache
+scss/.sass-cache/*
+
+# Ignore CodeKit config file
 config.codekit
