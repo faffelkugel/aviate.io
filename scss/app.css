@@ -1247,10 +1247,24 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
   color: #0F8DF0; }
 
 .lead {
-  color: #e3e3e3;
+  color: #d5d5d5;
   font-size: 1.2rem; }
 
-p a {
+p {
+  color: #969696;
+  line-height: 1.5rem; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #d5d5d5;
+  transition-duration: .2s; }
+  a:hover {
+    color: #0F8DF0;
+    border-bottom: 1px solid #0F8DF0; }
+
+a.temp {
   color: #0F8DF0;
   float: left;
   margin-right: 1rem;
